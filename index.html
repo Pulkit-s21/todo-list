@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body class="
+  container
+  mx-auto
+  bg-body
+  ">
+    <main>
+
+      <div class="container mx-auto max-w-2xl">
+
+        <!-- Search Task -->
+        <header class="text-center my-6 px-4">
+          
+          <h1 class="
+          text-white
+          mb-8 
+          text-4xl 
+          uppercase
+          ">Todo List</h1>
+
+          <form class="search">
+            
+            <input class="
+            w-full
+            text-white 
+            bg-input 
+            m-auto 
+            text-center 
+            text-xl 
+            p-2
+            shadow-md
+            shadow-black
+            focus:outline-none
+            " type="text" name="search" placeholder="Search Task">
+          </form>
+        </header>
+
+        <!-- Task Area -->
+        <ul class="taskArea flex flex-col gap-8 p-4 mx-auto">
+        </ul>
+
+        <!-- Add Task -->
+        <form class="add flex flex-col text-center my-4 p-4">
+
+          <label class="
+          text-white
+          mb-8 
+          text-2xl
+          " for="newTask">Add New Task</label>
+
+          <input class="
+          text-white 
+          bg-input
+          p-2 
+          text-center 
+          text-xl
+          shadow-md
+          shadow-black
+          focus:outline-none
+          " type="text" id="newTask" name="add" placeholder="New Task">
+
+        </form>
+
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/4eaa959a81.js" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
