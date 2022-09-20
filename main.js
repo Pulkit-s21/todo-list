@@ -36,7 +36,7 @@ function generateTask(taskTitle){
                 </div>
         </li>
     `
-    taskArea.prepend(newTask);
+    taskArea.append(newTask);
 }
 
 //!deleting tasks
