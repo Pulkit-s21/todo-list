@@ -19,11 +19,11 @@ addForm.addEventListener("submit", (e) => {
         alert('Please enter a task !');
     }
 
-});
+})
 
 //*creating the tasks dynamically 
 function generateTask(taskTitle){
-    const newTask = document.createElement('li');
+    const newTask = document.createElement('div');
 
     // cant give space and type like I do in HTML cz then it doesnt work..needs to be in a line
     newTask.innerHTML = 
@@ -44,6 +44,9 @@ function generateTask(taskTitle){
 taskArea.addEventListener("click", (e) => {
     if(e.target.classList.contains("fa-trash")){
         e.target.parentElement.parentElement.remove(); // we are going above 2 lvls to get the li itself and deleteIt..in course he went 1 lvl up but we have the icons inside another div so we hv to go 2 lvls
+    }
+    if(e.target.classList.contains("task")){
+        e.target.classList.toggle("line-through");
     }
 });
 
