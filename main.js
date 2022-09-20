@@ -55,7 +55,7 @@ search.addEventListener("keyup", () => {
 });
 
 //*filtering the todos
-const filterTodos = (term) => {
+function filterTodos(term){
     // console.log(Array.from(taskArea.children)); taskArea.children returns HTML collection and we need array to apply filter so we chng it
     Array.from(taskArea.children)
     // here we are returning the tasks that dont hv what user has typed because we want to hide those tasks and do nothing to those that matches
