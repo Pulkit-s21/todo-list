@@ -35,7 +35,7 @@ function generateTask(taskTitle){
                     <i class="cursor-pointer fa-solid fa-trash"></i>
                 </div>
         </li>
-    `
+    `;
     taskArea.append(newTask);
 }
 
