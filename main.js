@@ -47,6 +47,12 @@ taskArea.addEventListener("click", (e) => {
     }
 });
 
+//*searching and filtering
+search.addEventListener("keyup", () => {
+    //toLowercase so that no matter what user enters it always converts the values in lowercase
+    const term  = search.value.trim().toLowerCase();
+    filterTodos(term);
+});
 
 //*filtering the todos
 const filterTodos = (term) => {
@@ -62,10 +68,3 @@ const filterTodos = (term) => {
     .filter((todo) => todo.textContent.toLowerCase().includes(term))
     .forEach((todo) => todo.classList.remove("hidden"));
 };
-
-//*searching and filtering
-search.addEventListener("keyup", () => {
-    //toLowercase so that no matter what user enters it always converts the values in lowercase
-    const term  = search.value.trim().toLowerCase();
-    filterTodos(term);
-});
