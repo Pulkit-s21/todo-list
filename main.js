@@ -25,21 +25,10 @@ addForm.addEventListener("submit", (e) => {
 function generateTask(taskTitle){
     const newTask = document.createElement('li');
 
+    // cant give space and type like I do in HTML cz then it doesnt work..needs to be in a line
     newTask.innerHTML = 
     `
-        <li class="
-        md:text-lg
-        text-white
-        list-group-item
-        flex
-        gap-8
-        justify-between
-        items-center
-        p-4
-        px-8
-        shadow-md
-        shadow-black
-        ">
+        <li class="list-group-item md:text-xl text-white flex justify-between p-4 px-8 shadow-md shadow-black">
             <span class="task capitalize cursor-pointer hover:text-slate-200 transition-all">${taskTitle}</span>
                 <div class="flex gap-6">
                     <i class="cursor-pointer fa-regular fa-pen-to-square"></i>
